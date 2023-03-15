@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>U.P.G.R.A.D.E - Contact Us</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/css/global-styles.css">
+	<link rel="stylesheet" href="/css/header-style.css">
+	<link rel="stylesheet" href="/css/navigation-style.css">
+	<link rel="stylesheet" href="/css/navigation-style.css">
+	<link rel="stylesheet" href="/css/form-style.css">
+	<link rel="stylesheet" href="/css/image-style.css">
+	<link rel="stylesheet" href="/css/footer-style.css">
+
+	<script src="json/countries.json"></script>
+	<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+</head>
+
+<body>
+
+	<header class="header-section">
+		<h1 class="header-heading">
+			The
+			<span>U.P.G.R.A.D.E</span>
+			Store
+			<p class="header-subtitle">
+				<a>
+					<span>Unleash</span> <span>Potential</span> and <span>Growth</span> through <span>Radiant</span>
+					<span>Attire</span> and <span>Daring</span> <span>Empowerment</span>
+				</a>
+			</p>
+			<nav class="navbar">
+				<a href="homepage.html" style="font-size: 0.3em;">
+					<lord-icon src="https://cdn.lordicon.com/slduhdil.json" trigger="hover" colors="primary:#ffffff"
+						style="width:1em; height:1em; padding-top: 0.2em">
+					</lord-icon>
+					Home
+				</a>
+				<a href="shop.html" style="font-size: 0.3em;">
+					<lord-icon src="https://cdn.lordicon.com/udbbfuld.json" trigger="hover" colors="primary:#ffffff"
+						style="width:1em; height:1em; padding-top: 0.2em">
+					</lord-icon>
+					Shop
+				</a>
+				<a href="about-us.html" style="font-size: 0.3em;">
+					<lord-icon src="https://cdn.lordicon.com/ogkplaef.json" trigger="hover" colors="primary:#ffffff"
+						style="width:1em; height:1em; padding-top: 0.2em">
+					</lord-icon>
+					About-Us
+				</a>
+				<a href="#" style="font-size: 0.3em; color:#d5be8d">
+					<lord-icon src="https://cdn.lordicon.com/tftaqjwp.json" trigger="hover" colors="primary:#d5be8d"
+						style="width:1em; height:1em; padding-top: 0.2em">
+					</lord-icon>
+					Contact-Us
+				</a>
+			</nav>
+		</h1>
+	</header>
+
+	<main>
+		<form method="post" action="send-email.php" class="form-section">
+			<h2 class="form-heading">Contact Us</h2>
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+
+			<div class="form-group">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+			</div>
+
+			<div class="form-group">
+				<label for="country">Country:</label>
+				<select id="country" name="country" style="height: 50px; font-size: 16px;"></select>
+			</div>
+
+			<button type="submit" class="submit-btn" name="submit">Submit</button>
+
+			<script>
+				const select = document.getElementById("country");
+
+				// Fetch the countries from JSON file
+				fetch("json/countries.json")
+					.then(response => response.json())
+					.then(countries => {
+						// Sort the country list by GDP
+						countries.sort((a, b) => b.gdp - a.gdp);
+
+						// Add all countries to the select element
+						for (let i = 0; i < countries.length; i++) {
+							const option = document.createElement("option");
+							option.value = countries[i].code;
+							option.textContent = countries[i].name;
+							select.appendChild(option);
+						}
+					})
+					.catch(error => console.error("Failed to fetch countries", error));
+			</script>
+
+		</form>
+	</main>
+
+
+	<footer>
+		<h1 class="footbar">
+			<span>&copy; 2023 The U.P.G.R.A.D.E Store</span>
+			<lord-icon src="https://cdn.lordicon.com/ehfubvwr.json" trigger="hover" colors="primary:#ffffff"
+				style="width:1em; height:1em; padding-top: 0.2em">
+			</lord-icon>
+		</h1>
+	</footer>
+
+</body>
+
+</html>

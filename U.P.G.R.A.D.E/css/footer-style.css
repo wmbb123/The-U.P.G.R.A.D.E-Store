@@ -1,0 +1,14 @@
+/* Footer section */
+footer {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.footbar {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	margin-top: auto;
+	/* Push the footer to the bottom */
+}

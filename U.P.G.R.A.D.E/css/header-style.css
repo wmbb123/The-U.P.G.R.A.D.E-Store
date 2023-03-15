@@ -1,0 +1,38 @@
+  /* Header section */
+  .header-section {
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100%;
+  	margin-bottom: 2em;
+  }
+
+  .header-heading {
+  	font-size: 100px;
+  	text-transform: capitalize;
+  	color: #000;
+  	animation: bounce-in 1s;
+  }
+
+  .header-heading span {
+  	color: #d5be8d;
+  	text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+  }
+
+  .header-subtitle {
+  	display: flex;
+  	justify-content: center;
+  	padding-bottom: 20px;
+  }
+
+  .header-subtitle a {
+  	font-size: 20px;
+  	text-transform: capitalize;
+  	color: #000;
+  }
+
+  .header-subtitle a span {
+  	color: #d5be8d;
+  	text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+  }

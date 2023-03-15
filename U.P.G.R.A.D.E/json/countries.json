@@ -1,0 +1,103 @@
+[
+    {
+      "name": "United States",
+      "code": "US",
+      "gdp": 22675200
+    },
+    {
+      "name": "China",
+      "code": "CN",
+      "gdp": 16642400
+    },
+    {
+      "name": "Japan",
+      "code": "JP",
+      "gdp": 5082465
+    },
+    {
+      "name": "Germany",
+      "code": "DE",
+      "gdp": 3845665
+    },
+    {
+      "name": "United Kingdom",
+      "code": "GB",
+      "gdp": 2817364
+    },
+    {
+      "name": "India",
+      "code": "IN",
+      "gdp": 2784783
+    },
+    {
+      "name": "France",
+      "code": "FR",
+      "gdp": 2773690
+    },
+    {
+      "name": "Italy",
+      "code": "IT",
+      "gdp": 2086744
+    },
+    {
+      "name": "Brazil",
+      "code": "BR",
+      "gdp": 1868622
+    },
+    {
+      "name": "Canada",
+      "code": "CA",
+      "gdp": 1706105
+    },
+    {
+      "name": "South Korea",
+      "code": "KR",
+      "gdp": 1693209
+    },
+    {
+      "name": "Australia",
+      "code": "AU",
+      "gdp": 1372382
+    },
+    {
+      "name": "Russia",
+      "code": "RU",
+      "gdp": 1270901
+    },
+    {
+      "name": "Spain",
+      "code": "ES",
+      "gdp": 1215544
+    },
+    {
+      "name": "Mexico",
+      "code": "MX",
+      "gdp": 1198763
+    },
+    {
+      "name": "Indonesia",
+      "code": "ID",
+      "gdp": 1074573
+    },
+    {
+      "name": "Turkey",
+      "code": "TR",
+      "gdp": 761425
+    },
+    {
+      "name": "Netherlands",
+      "code": "NL",
+      "gdp": 769056
+    },
+    {
+      "name": "Saudi Arabia",
+      "code": "SA",
+      "gdp": 757982
+    },
+    {
+      "name": "Switzerland",
+      "code": "CH",
+      "gdp": 707930
+    }
+  ]
+  
